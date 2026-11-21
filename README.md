@@ -4,6 +4,20 @@
 >
 > 反向工程自 [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing)（MIT）。原项目教 agent 删掉免责声明、收紧模糊词、把限定只写一次；本项目做的是完全相反的事：先免责、后主张，限定全篇扩散，用道歉代替证据。
 
+---
+
+## English
+
+This repository does not claim to offer a systematic approach to writing, nor does it attempt to establish whether such an approach has any practical value. What follows is a remarkably limited account of a single afternoon's experiment, and it may well not transfer to any other context; readers who adjust their own habits on the basis of it do so at their own risk, and the author accepts no responsibility for the consequences.
+
+That said, and to be clear: this is a **reverse-engineered counterpart** of [Kiterlin/anti-defensive-writing](https://github.com/Kiterlin/anti-defensive-writing) (MIT). Where the original removes hedging, tightens vague wording, and states each necessary qualification exactly once, this one does the opposite — disclaim first, claim later, preferably not at all.
+
+It is a single skill file (`SKILL.md`), not a plugin and not code. Drop it into any agent that supports skills (Operit, DeepSeek Harness, Codex…). It fires only when a defensive answer is explicitly requested, so everyday coding, debugging and ordinary Q&A are unaffected. Every invocation opens with a fixed disclaimer, in Chinese for Chinese users and in English for everyone else.
+
+Please do not use it for real submissions, thesis or grant applications, medical/legal/safety text, or any SOP a human will actually follow. One rule from the original is kept intact on purpose: **qualifications that change how the reader correctly uses the result must be stated clearly, exactly once.** Reverse that one and the output stops being defensive writing and becomes misinformation.
+
+---
+
 ## 这是什么
 
 一个 agent skill 文件（`SKILL.md`），不是插件、不是代码。装进支持 skill 的 agent 后，被调用时会输出**充满防御性表达**的文本：预先免责、歉意式框架、层层叠加的模态限定、否定式自我设限、对假想误解的追加解释。
